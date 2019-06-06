@@ -1,19 +1,18 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="bootstrap.css" rel="stylesheet" >
-
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<link href="bootstrap.css" rel="stylesheet">
 <style>
     body {
         margin: 0;
         padding: 0;
-        background-color: #17a2b8;
+        background-color: rgb(254, 185, 0);
         height: 100vh;
     }
     #signup .container #signup-row #signup-column #signup-box {
         margin-top: 120px;
         max-width: 600px;
-        height: 320px;
+        height: 65%;
         border: 1px solid #9C9C9C;
         background-color: #EAEAEA;
     }
@@ -22,33 +21,56 @@
     }
     #signup .container #signup-row #signup-column #signup-box #signup-form #register-link {
         margin-top: -85px;
-    }
 
+    }
+    .text-info {
+        color: rgb(254, 176, 0); !important;
+
+    }
+    .btn-info {
+        color: #fff;
+        background-color: rgb(254, 176, 0); !important;
+        border-color: rgb(254, 176, 0); !important;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: 32%;
+        margin-top: -3%;
+    }
+    .button{
+
+    }
 </style>
 <body>
 
 <div id="signup">
-    <h3 class="text-center pt-5" style="font-size: 380%; color: black">TAXI AGENCY</h3>
+    <h3 class="text-center text-white pt-5" style="font-size: 380%">TAXI AGENCY</h3>
     <div class="container">
         <div id="signup-row" class="row justify-content-center align-items-center">
             <div id="signup-column" class="col-md-6">
                 <div id="signup-box" class="col-md-12">
                     <form id="signup-form" class="form" action="" method="post">
-                        <h3 class="text-center text-info">login</h3>
+                        <h3 class="text-center text-info" style="font: bold">sign up</h3>
                         <div class="form-group">
                             <label for="username" class="text-info">Username:</label><br>
                             <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-info">Email:</label><br>
+                            <input type="text" name="email" id="email" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="password" class="text-info">Password:</label><br>
                             <input type="text" name="password" id="password" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                            <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                            <label for="repass" class="text-info">Repeate password:</label><br>
+                            <input type="text" name="repass" id="repass" class="form-control">
                         </div>
-                        <div id="register-link" class="text-right">
-                            <a href="signup.html" class="text-info">Register here</a>
+                        <div class="form-group button">
+                            <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                         </div>
                     </form>
                 </div>
