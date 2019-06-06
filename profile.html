@@ -1,0 +1,93 @@
+
+<link rel="stylesheet"  href="bootstrap.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+        .sidenav {
+            height: 100%;
+            width: 13%;
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidenav a {
+            padding: 6px 8px 6px -1px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {float: left;}
+            div.content {margin-left: 0;}
+        }
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+        .profileImage{
+            width : 13rem;
+            height : 13rem;
+            margin-left: 9.5%;
+        }
+        .sideTexts{
+            margin-left: 21.5%;
+        }
+        .call_info{
+            color: white;
+            margin-top:120% ;
+            margin-left:-10%;
+        }
+        .mail_info{
+            color: white;
+            margin-left:-16%;
+        }
+        .family_margin{
+            margin-left: 5%;
+            margin-top: -10%
+        }
+        .user-name{
+            margin-left: -10%;
+            color: rgb(254, 185, 0);
+        }
+        .info{
+            margin-top: 50%
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <img src="profile.jpeg" class="img-responsive img-circle profileImage" alt="Cinque Terre" width="300" height="300">
+    <div class="sideTexts">
+        <h1 class="user-name">qhazale</h1>
+        <h6 class="call_info">phone: (+98) 9100018009</h6>
+        <h6 class="mail_info">email: ghazal.b93@gmail.com</h6>
+    </div>
+</div>
+
+</body>
+</html>
